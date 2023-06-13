@@ -132,24 +132,26 @@ img {
     mobile: dai 480px in giù
     tablet: dai 786px in giù
   ************************************************/
-
-@media screen and (min-width: 480px ) {
+  @media screen and (max-width: 768px ) {
+.container{
+    width: 100%;
+}
+    
+} 
+@media screen and (max-width: 480px ) {
     .row{
         flex-direction: column;
+        row-gap: 2rem;
     } 
-    
-} 
-@media screen and (min-width: 480px ) {
-    h2{
-        text-align: center;
-    } 
-    
-} 
+    .lessons .col,
+    .steps .col,
+    .why-us[class*='col-']{
+        width: 100%;
+    }
 
-@media screen and (min-width: 768px ) {
-    .row{
-        flex-direction: row;
-    } 
-    
-} 
+.why-us{
+    text-align: center;
+}
+
+
 
